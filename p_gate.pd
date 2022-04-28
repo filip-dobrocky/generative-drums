@@ -1,0 +1,17 @@
+#N canvas 1386 -820 450 300 12;
+#X obj 113 25 inlet;
+#X obj 113 56 random 100;
+#X obj 74 123 spigot;
+#X obj 74 159 outlet;
+#X obj 113 93 expr $i1 <= $i2;
+#X obj 219 21 inlet;
+#X obj 295 23 loadbang;
+#X obj 283 64 \$1;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 4 0;
+#X connect 2 0 3 0;
+#X connect 4 0 2 1;
+#X connect 5 0 4 1;
+#X connect 6 0 7 0;
+#X connect 7 0 4 1;

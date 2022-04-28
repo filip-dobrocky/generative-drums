@@ -1,0 +1,31 @@
+#N canvas 1254 -851 621 458 12;
+#X obj 281 112 snare 160 250;
+#X obj 304 147 hsl 100 15 0 1 0 0 empty snareVol empty -2 -8 0 10 -261234
+-1 -1 2970 1;
+#X obj 281 177 *~;
+#X obj 99 138 hsl 100 15 0 1 0 0 empty kickVol empty -2 -8 0 10 -261234
+-1 -1 7920 1;
+#X obj 74 162 *~;
+#X obj 72 111 kick 60 300;
+#X obj 81 243 throw~ ML;
+#X obj 209 242 throw~ MR;
+#X obj 70 33 inlet;
+#X obj 281 38 inlet;
+#X obj 177 46 tgl 15 0 empty drumsOn empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X obj 71 73 spigot;
+#X obj 280 74 spigot;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 6 0;
+#X connect 2 0 7 0;
+#X connect 3 0 4 1;
+#X connect 4 0 7 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X connect 8 0 11 0;
+#X connect 9 0 12 0;
+#X connect 10 0 11 1;
+#X connect 10 0 12 1;
+#X connect 11 0 5 0;
+#X connect 12 0 0 0;

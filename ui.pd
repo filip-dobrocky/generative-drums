@@ -1,0 +1,17 @@
+#N canvas 1921 -1011 482 364 24;
+#X obj 167 57 vsl 40 128 0.01 1 0 1 mainVolume empty empty 0 -9 0 10
+-4034 -1 -1 8000 1;
+#X text 141 15 Volume;
+#X obj 40 55 tgl 50 0 dspOn empty empty 17 7 0 10 -258113 -1 -1 1 1
+;
+#X text 20 17 DSP ON;
+#X obj 46 298 main;
+#X obj 42 152 tgl 50 0 playing empty empty 17 7 0 10 -261234 -1 -1
+0 1;
+#X text 22 114 PLAYING;
+#X obj 267 58 vsl 40 128 40 200 0 1 bpm empty empty 0 -9 0 10 -260097
+-1 -1 7200 1;
+#X text 259 16 BPM;
+#X obj 178 249 hradio 30 1 0 4 stateNum stateUI empty 0 -8 0 10 -262144
+-1 -1 0;
+#X text 190 209 states;

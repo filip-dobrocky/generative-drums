@@ -1,0 +1,18 @@
+#N canvas 1580 -918 450 300 12;
+#X obj 16 17 loadbang;
+#X msg 20 52 0.8;
+#X msg 106 54 0.3;
+#X obj 22 93 s kickVol;
+#X obj 104 93 s snareVol;
+#X msg 202 52 0.5;
+#X obj 201 92 s synthVol;
+#X msg 283 51 0;
+#X obj 306 92 s stateUI;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 0 0 5 0;
+#X connect 0 0 7 0;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 5 0 6 0;
+#X connect 7 0 8 0;

@@ -1,0 +1,120 @@
+#N canvas 1650 -1022 730 590 12;
+#X obj 234 162 metro;
+#X floatatom 268 65 5 0 0 0 - - -;
+#X obj 234 132 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 235 193 f;
+#X obj 277 193 + 1;
+#X obj 235 221 % 8;
+#X obj 236 278 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 253 278 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 270 278 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 287 278 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 304 278 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 321 278 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 338 278 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 355 278 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 264 131 tempo \$1 permin;
+#X obj 70 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 234 249 select 0 1 2 3 4 5 6 7;
+#X obj 374 313 p_gate 100;
+#X obj 146 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 222 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 298 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 374 343 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 450 345 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 526 345 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 602 345 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 70 313 p_gate 80;
+#X obj 146 313 p_gate 40;
+#X obj 222 313 p_gate 60;
+#X obj 298 313 p_gate 70;
+#X obj 602 313 p_gate 75;
+#X obj 450 313 p_gate 30;
+#X obj 526 313 p_gate 20;
+#X obj 268 98 * 4;
+#X obj -675 376 e_o;
+#X obj 2083 320 e_o;
+#X obj 146 366 e_o;
+#X obj 222 367 e_o;
+#X obj 298 367 e_o;
+#X obj 450 368 e_o;
+#X obj 526 369 e_o;
+#X obj 602 369 e_o;
+#X obj 294 437 outlet;
+#X obj 358 436 outlet;
+#X obj 160 77 inlet;
+#X obj 268 33 r bpm;
+#X obj 462 241 s beatSync;
+#X connect 0 0 3 0;
+#X connect 1 0 32 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 1;
+#X connect 5 0 16 0;
+#X connect 5 0 45 0;
+#X connect 6 0 25 0;
+#X connect 7 0 26 0;
+#X connect 8 0 27 0;
+#X connect 9 0 28 0;
+#X connect 10 0 17 0;
+#X connect 11 0 30 0;
+#X connect 12 0 31 0;
+#X connect 13 0 29 0;
+#X connect 14 0 0 0;
+#X connect 15 0 41 0;
+#X connect 16 0 6 0;
+#X connect 16 1 7 0;
+#X connect 16 2 8 0;
+#X connect 16 3 9 0;
+#X connect 16 4 10 0;
+#X connect 16 5 11 0;
+#X connect 16 6 12 0;
+#X connect 16 7 13 0;
+#X connect 17 0 21 0;
+#X connect 18 0 35 0;
+#X connect 19 0 36 0;
+#X connect 20 0 37 0;
+#X connect 21 0 42 0;
+#X connect 22 0 38 0;
+#X connect 23 0 39 0;
+#X connect 24 0 40 0;
+#X connect 25 0 15 0;
+#X connect 26 0 18 0;
+#X connect 27 0 19 0;
+#X connect 28 0 20 0;
+#X connect 29 0 24 0;
+#X connect 30 0 22 0;
+#X connect 31 0 23 0;
+#X connect 32 0 14 0;
+#X connect 35 0 41 0;
+#X connect 35 1 42 0;
+#X connect 36 0 41 0;
+#X connect 36 1 42 0;
+#X connect 37 0 41 0;
+#X connect 37 1 42 0;
+#X connect 38 0 41 0;
+#X connect 38 1 42 0;
+#X connect 39 0 41 0;
+#X connect 39 1 42 0;
+#X connect 40 0 41 0;
+#X connect 40 1 42 0;
+#X connect 43 0 2 0;
+#X connect 44 0 1 0;
