@@ -1,2 +1,2 @@
 # generative-drums
-a simple generative pure data patch using drum and FM synthesis
+a simple generative ``pure data`` patch using drum and FM synthesis
